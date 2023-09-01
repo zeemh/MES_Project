@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/mainPage.css">
+
+	<th:block th:include="header.html"></th:block>
+</head>
+<body>
+	<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<div class="main">
+	
+	<a class="ch1" href="#"><img src="order.png"><br>발주관리</a>
+	<a class="ch2" href="#"><img src="obtain_order.png"><br>수주관리</a>
+	<a class="ch3" href="#"><img src="process.png"><br>공정관리</a>
+	<a class="ch4" href="#"><img src="production.png"><br>생산관리</a>
+	<a class="ch5" href="#"><img src="stock.png"><br>재고관리</a>
+	<a class="ch6" href="#"><img src="shipment.png"><br>출하관리</a>
+	<div>
+<div class="sub_form">
+
+
+        <ul class="menu">
+        <div class="bar-container">
+            <li class="bar">
+                <img src="order.png" alt="" class="source">
+                <p class="click">발주관리</p>
+                <img src="arrow_right_white.png" alt="" class="arrow">
+            </li>
+            <div class="menu_box" style="display: none; left: 200px; top: unset;">
+                <ul>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">발주 관리</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">원부재료 관리</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">협력업체</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bar-container">
+            <li class="bar">
+                <img src="obtain_order.png" alt="" class="source">
+                <p class="click">수주관리</p>
+                <img src="arrow_right_white.png" alt="" class="arrow">
+            </li>
+            <div class="menu_box" style="display: none; left: 200px; top: unset;">
+                <ul>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">수주 관리</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">제품 관리</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">고객 관리</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bar-container">
+            <li class="bar">
+                <img src="process.png" alt="" class="source">
+                <p class="click">공정관리</p>
+                <img src="arrow_right_white.png" alt="" class="arrow">
+            </li>
+            <div class="menu_box" style="display: none; left: 200px; top: unset;">
+                <ul>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">공정 관리</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">성분배합 비율</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">작업표준 정보</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">통합 레시피</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bar-container">
+            <li class="bar">
+                <img src="production.png" alt="" class="source">
+                <p class="click">생산관리</p>
+                <img src="arrow_right_white.png" alt="" class="arrow">
+            </li>
+            <div class="menu_box" style="display: none; left: 200px; top: unset;">
+                <ul>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">생산 관리</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">작업자 정보</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bar-container">
+            <li class="bar">
+                <img src="stock.png" alt="" class="source">
+                <p class="click">재고관리</p>
+                <img src="arrow_right_white.png" alt="" class="arrow">
+            </li>
+            <div class="menu_box" style="display: none; left: 200px; top: unset;">
+                <ul>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">입/출고 관리</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">재고 관리</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">입고 등록</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">출고 등록</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">창고 관리</a>
+                    </li>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">입/출고 요청</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bar-container">
+            <li class="bar">
+                <img src="shipment.png" alt="" class="source">
+                <p class="click">출하관리</p>
+                <img src="arrow_right_white.png" alt="" class="arrow">
+            </li>
+            <div class="menu_box" style="display: none; left: 200px; top: unset;">
+                <ul>
+                    <li class="tab_on">
+                        <a href="#" style="cursor: pointer;">출하 관리</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </ul>
+	
+	</div>
+	<script>
+		
+		var i = 0;
+    $(function(){
+        $('.bar').click(function(e){
+			if(i == 0){
+            // 모든 .click 요소에 흰색 텍스트로 스타일 적용
+            $('.click').css('color', '#fffff');
+            // 클릭한 .click 요소에 검은색 텍스트로 스타일 적용
+            $(this).find('.click').css('color','#000');
+            // 클릭한 .bar 요소 안에 있는 .click 요소의 색상 변경
+            $(this).find('.click').css('color', '#000');
+            // 모든 .bar 요소의 배경색 초기화
+            $('.bar').css('background-color', 'transparent');
+            // 클릭한 .bar 요소의 배경색 변경
+            $(this).css('background-color', '#f9cccc');
+            
+            // 클릭한 .bar 요소의 다음 .menu_box 요소 보이기
+            $(this).next('.menu_box').css('display', 'block');
+			
+            // 클릭한 .bar 요소 외에 있는 모든 .click 요소 색상 초기화
+            $('.bar').not(this).find('.click').css('color', '#fff');
+			i++;	
+			}else{
+            // 모든 .menu_box 요소 숨김
+            $('.menu_box').css('display', 'none');
+			i=0;				
+			}
+			
+            });
+				
+           
+           
+
+
+
+    });
+    
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/mainheader.css">
+</head>
+<body>
+<header>
+		<div class="header">
+				<table><tr>
+				<td><a onclick="history.back()" id="back"><img src="back.png" ></a></td>
+				<td><a href="/mainPage" id="logo"><img src="logo2.png" alt="로고"></a></td>
+				</div>
+				<td>
+	<ul class="menu">
+				<li class="bar"><a href="#">발주관리<img src="down.png" alt="" class="arrow"></a></li>
+					<ul class="submenu">
+						<li><a href="#">발주 관리</a></li>
+						<li><a href="#">원부재료 관리</a></li>
+						<li><a href="#">협력업체</a></li>
+					</ul>
+				</li>
+<li class="bar"><a href="#" class="abar">수주관리<img src="down.png" alt="" class="arrow"></a></li>
+					<ul class="submenu">
+						<li><a href="#">수주 관리</a></li>
+						<li><a href="#">제품 관리</a></li>
+						<li><a href="#">고객 관리</a></li>
+					</ul>
+				</li>
+<li class="bar"><a href="#">공정관리<img src="down.png" alt="" class="arrow"></a></li>
+					<ul class="submenu">
+						<li><a href="#">공정 관리</a></li>
+						<li><a href="#">작업 표준 정보</a></li>
+						<li><a href="#">통합 레시피</a></li>
+					</ul>
+</li>
+<li class="bar"><a href="#">생산관리<img src="down.png" alt="" class="arrow"></a></li>
+					<ul class="submenu">
+						<li><a href="#">생산 관리</a></li>
+					</ul>
+					</li>
+<li class="bar"><a href="#">재고관리<img src="down.png" alt="" class="arrow"></a></li>
+					<ul class="submenu">
+						<li><a href="#">재고 관리</a></li>
+						<li><a href="#">입고 등록</a></li>
+						<li><a href="#">출고 등록</a></li>
+						<li><a href="#">창고 관리</a></li>
+						<li><a href="#">입/출고 관리</a></li>
+						<li><a href="#">입/출고 요청</a></li>
+					</ul>
+</li>
+<li class="bar"><a href="#">출하관리<img src="down.png" alt="" class="arrow"></a></li>
+					<ul class="submenu">
+						<li><a href="#">출하 관리</a></li>
+					</ul>
+					</li>
+			</ul>
+				</td>
+</table>
+	</header>
+		<script>	
+    $(function(){
+        $('.bar').onclick(function(e){
+            // 모든 .menu_box 요소 숨김
+            $('.submenu').css('display', 'none');
+           
+            // 클릭한 .bar 요소의 다음 .menu_box 요소 보이기
+            $(this).next('.submenu').css('display', 'block');
+			
+			
+			
+			
+		 
+
+			
+			
+    });
+    });
+    </script>
+</body>
+</html>
